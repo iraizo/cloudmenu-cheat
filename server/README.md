@@ -13,6 +13,6 @@ CREATE TABLE "users" (
 ```
 
 - run `npm i`
-
+- run `npx tailwindcss build public/css/tailwind.css -o public/css/style.css`
 - Run `npm run dev` to run a developement server locally
 - Run `npm run build` to build a production build.
