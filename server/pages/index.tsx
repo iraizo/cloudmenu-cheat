@@ -126,14 +126,12 @@ export default class Index extends React.Component<any, any> {
     }
 
     save = () => {
-        console.log(this.state.values.aim);
         fetch("api/auth/currentUser", {
             method: "GET"
         }).then(async response => {
             let json = await response.json();
             if (json["auth"]) {
                 let values = this.state.values;
-                console.log(values);
                 fetch("api/menu/sendInfo", {
                     method: "POST",
                     headers: {
